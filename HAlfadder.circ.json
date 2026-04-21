@@ -1,0 +1,248 @@
+{
+  "components": [
+    {
+      "id": "x22ayymlnq",
+      "type": "halfadder",
+      "state": {
+        "id": "x22ayymlnq",
+        "type": "halfadder",
+        "position": {
+          "x": 272,
+          "y": 192
+        },
+        "size": {
+          "width": 64,
+          "height": 64
+        },
+        "selected": false,
+        "defaultBitWidth": 1,
+        "isMultiBit": false,
+        "rotation": 0,
+        "inputs": [
+          {
+            "id": "x22ayymlnq-input-0",
+            "value": false,
+            "isConnected": true,
+            "position": {
+              "x": 256,
+              "y": 208
+            },
+            "bitWidth": 1
+          },
+          {
+            "id": "x22ayymlnq-input-1",
+            "value": true,
+            "isConnected": true,
+            "position": {
+              "x": 256,
+              "y": 240
+            },
+            "bitWidth": 1
+          }
+        ],
+        "outputs": [
+          {
+            "id": "x22ayymlnq-output-0",
+            "value": true,
+            "isConnected": true,
+            "position": {
+              "x": 352,
+              "y": 208
+            },
+            "bitWidth": 1
+          },
+          {
+            "id": "x22ayymlnq-output-1",
+            "value": false,
+            "isConnected": true,
+            "position": {
+              "x": 352,
+              "y": 240
+            },
+            "bitWidth": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "sa7n8eusfq",
+      "type": "toggle",
+      "state": {
+        "id": "sa7n8eusfq",
+        "type": "toggle",
+        "position": {
+          "x": 144,
+          "y": 208
+        },
+        "size": {
+          "width": 64,
+          "height": 64
+        },
+        "selected": false,
+        "defaultBitWidth": 1,
+        "isMultiBit": false,
+        "rotation": 0,
+        "inputs": [],
+        "outputs": [
+          {
+            "id": "sa7n8eusfq-output-0",
+            "value": true,
+            "isConnected": true,
+            "position": {
+              "x": 224,
+              "y": 240
+            },
+            "bitWidth": 1
+          }
+        ],
+        "on": true
+      }
+    },
+    {
+      "id": "kb7mddy4exg",
+      "type": "toggle",
+      "state": {
+        "id": "kb7mddy4exg",
+        "type": "toggle",
+        "position": {
+          "x": 144,
+          "y": 144
+        },
+        "size": {
+          "width": 64,
+          "height": 64
+        },
+        "selected": false,
+        "defaultBitWidth": 1,
+        "isMultiBit": false,
+        "rotation": 0,
+        "inputs": [],
+        "outputs": [
+          {
+            "id": "kb7mddy4exg-output-0",
+            "value": false,
+            "isConnected": true,
+            "position": {
+              "x": 224,
+              "y": 176
+            },
+            "bitWidth": 1
+          }
+        ],
+        "on": false
+      }
+    },
+    {
+      "id": "gmlz3cic21e",
+      "type": "light-bulb",
+      "state": {
+        "id": "gmlz3cic21e",
+        "type": "light-bulb",
+        "position": {
+          "x": 496,
+          "y": 208
+        },
+        "size": {
+          "width": 64,
+          "height": 64
+        },
+        "selected": false,
+        "defaultBitWidth": 1,
+        "isMultiBit": false,
+        "rotation": 0,
+        "inputs": [
+          {
+            "id": "gmlz3cic21e-input-0",
+            "value": true,
+            "isConnected": true,
+            "position": {
+              "x": 480,
+              "y": 240
+            },
+            "bitWidth": 1
+          }
+        ],
+        "outputs": []
+      }
+    },
+    {
+      "id": "46sw2t2kfjp",
+      "type": "light-bulb",
+      "state": {
+        "id": "46sw2t2kfjp",
+        "type": "light-bulb",
+        "position": {
+          "x": 528,
+          "y": 336
+        },
+        "size": {
+          "width": 64,
+          "height": 64
+        },
+        "selected": false,
+        "defaultBitWidth": 1,
+        "isMultiBit": false,
+        "rotation": 0,
+        "inputs": [
+          {
+            "id": "46sw2t2kfjp-input-0",
+            "value": false,
+            "isConnected": true,
+            "position": {
+              "x": 512,
+              "y": 368
+            },
+            "bitWidth": 1
+          }
+        ],
+        "outputs": []
+      }
+    }
+  ],
+  "wires": [
+    {
+      "id": "31zaghca5pm",
+      "fromComponentId": "kb7mddy4exg",
+      "fromPortId": "kb7mddy4exg-output-0",
+      "toComponentId": "x22ayymlnq",
+      "toPortId": "x22ayymlnq-input-0",
+      "wireState": {
+        "controlPoints": [],
+        "hasManualControlPoints": false
+      }
+    },
+    {
+      "id": "jet5srcnm7",
+      "fromComponentId": "sa7n8eusfq",
+      "fromPortId": "sa7n8eusfq-output-0",
+      "toComponentId": "x22ayymlnq",
+      "toPortId": "x22ayymlnq-input-1",
+      "wireState": {
+        "controlPoints": [],
+        "hasManualControlPoints": false
+      }
+    },
+    {
+      "id": "zscnupgt4wc",
+      "fromComponentId": "x22ayymlnq",
+      "fromPortId": "x22ayymlnq-output-0",
+      "toComponentId": "gmlz3cic21e",
+      "toPortId": "gmlz3cic21e-input-0",
+      "wireState": {
+        "controlPoints": [],
+        "hasManualControlPoints": false
+      }
+    },
+    {
+      "id": "uchr951vny",
+      "fromComponentId": "x22ayymlnq",
+      "fromPortId": "x22ayymlnq-output-1",
+      "toComponentId": "46sw2t2kfjp",
+      "toPortId": "46sw2t2kfjp-input-0",
+      "wireState": {
+        "controlPoints": [],
+        "hasManualControlPoints": false
+      }
+    }
+  ]
+}
